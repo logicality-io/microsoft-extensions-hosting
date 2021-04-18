@@ -185,7 +185,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EBD9C8FF-D
 		libs\bullseye\test\Directory.Build.props = libs\bullseye\test\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bullseye.Tests", "libs\bullseye\test\Bullseye.Tests\Bullseye.Tests.csproj", "{35640368-8A5B-42A8-8F04-694E83DA51C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bullseye.Tests", "libs\bullseye\test\Bullseye.Tests\Bullseye.Tests.csproj", "{35640368-8A5B-42A8-8F04-694E83DA51C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lambda-authorizer", "lambda-authorizer", "{E5F6B42F-032C-4245-A862-659E4606F950}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DAE15A10-46FE-48A1-BA27-8199F7EDC1D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{10ADCEC7-9F83-491B-9835-5BFBE9D736FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lambda.BffAuthorizer", "libs\lambda-authorizer\src\Lambda.BffAuthorizer\Lambda.BffAuthorizer.csproj", "{477B2751-FA2B-46C1-B81B-F77022D42AEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -301,6 +309,10 @@ Global
 		{35640368-8A5B-42A8-8F04-694E83DA51C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35640368-8A5B-42A8-8F04-694E83DA51C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35640368-8A5B-42A8-8F04-694E83DA51C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477B2751-FA2B-46C1-B81B-F77022D42AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477B2751-FA2B-46C1-B81B-F77022D42AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477B2751-FA2B-46C1-B81B-F77022D42AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477B2751-FA2B-46C1-B81B-F77022D42AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -349,6 +361,9 @@ Global
 		{7FA0338D-14D9-4D1B-A857-875F3025216D} = {8DE1F929-BB06-4BAA-A90F-3DB49C17FFC7}
 		{EBD9C8FF-D56D-48C4-AA11-9F44183114A4} = {EF3DD315-B854-4C2B-9EF2-45596D5CD0F5}
 		{35640368-8A5B-42A8-8F04-694E83DA51C8} = {EBD9C8FF-D56D-48C4-AA11-9F44183114A4}
+		{DAE15A10-46FE-48A1-BA27-8199F7EDC1D8} = {E5F6B42F-032C-4245-A862-659E4606F950}
+		{10ADCEC7-9F83-491B-9835-5BFBE9D736FE} = {E5F6B42F-032C-4245-A862-659E4606F950}
+		{477B2751-FA2B-46C1-B81B-F77022D42AEE} = {DAE15A10-46FE-48A1-BA27-8199F7EDC1D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4306F166-DCCF-4316-88FC-9E339F1ABEFE}
