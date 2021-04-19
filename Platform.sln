@@ -185,7 +185,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EBD9C8FF-D
 		libs\bullseye\test\Directory.Build.props = libs\bullseye\test\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bullseye.Tests", "libs\bullseye\test\Bullseye.Tests\Bullseye.Tests.csproj", "{35640368-8A5B-42A8-8F04-694E83DA51C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bullseye.Tests", "libs\bullseye\test\Bullseye.Tests\Bullseye.Tests.csproj", "{35640368-8A5B-42A8-8F04-694E83DA51C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dynamodb-lock", "dynamodb-lock", "{F2A8CB17-D717-431C-BB69-9503A602EC82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{94122643-6B91-4713-ABF8-AC60EE3DE540}"
+	ProjectSection(SolutionItems) = preProject
+		libs\dynamodb-lock\src\Directory.Build.props = libs\dynamodb-lock\src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9D87D61C-B62E-4D57-B34E-57ECFE23346F}"
+	ProjectSection(SolutionItems) = preProject
+		libs\dynamodb-lock\test\Directory.Build.props = libs\dynamodb-lock\test\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoDBLock.Pulumi", "libs\dynamodb-lock\src\DynamoDBLock.Pulumi\DynamoDBLock.Pulumi.csproj", "{2BF7E9C0-84BD-4169-A9C7-F2A869867052}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamoDBLock.Tests", "libs\dynamodb-lock\test\DynamoDBLock.Tests\DynamoDBLock.Tests.csproj", "{5F9832CE-6B71-4E2F-9735-32DBF53DE090}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -301,6 +317,14 @@ Global
 		{35640368-8A5B-42A8-8F04-694E83DA51C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35640368-8A5B-42A8-8F04-694E83DA51C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35640368-8A5B-42A8-8F04-694E83DA51C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF7E9C0-84BD-4169-A9C7-F2A869867052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF7E9C0-84BD-4169-A9C7-F2A869867052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF7E9C0-84BD-4169-A9C7-F2A869867052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF7E9C0-84BD-4169-A9C7-F2A869867052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9832CE-6B71-4E2F-9735-32DBF53DE090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9832CE-6B71-4E2F-9735-32DBF53DE090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9832CE-6B71-4E2F-9735-32DBF53DE090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9832CE-6B71-4E2F-9735-32DBF53DE090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -349,6 +373,10 @@ Global
 		{7FA0338D-14D9-4D1B-A857-875F3025216D} = {8DE1F929-BB06-4BAA-A90F-3DB49C17FFC7}
 		{EBD9C8FF-D56D-48C4-AA11-9F44183114A4} = {EF3DD315-B854-4C2B-9EF2-45596D5CD0F5}
 		{35640368-8A5B-42A8-8F04-694E83DA51C8} = {EBD9C8FF-D56D-48C4-AA11-9F44183114A4}
+		{94122643-6B91-4713-ABF8-AC60EE3DE540} = {F2A8CB17-D717-431C-BB69-9503A602EC82}
+		{9D87D61C-B62E-4D57-B34E-57ECFE23346F} = {F2A8CB17-D717-431C-BB69-9503A602EC82}
+		{2BF7E9C0-84BD-4169-A9C7-F2A869867052} = {94122643-6B91-4713-ABF8-AC60EE3DE540}
+		{5F9832CE-6B71-4E2F-9735-32DBF53DE090} = {9D87D61C-B62E-4D57-B34E-57ECFE23346F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4306F166-DCCF-4316-88FC-9E339F1ABEFE}
